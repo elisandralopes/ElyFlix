@@ -55,6 +55,7 @@ body {
   width: min-content;
   margin: 12px;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 
 img {
@@ -66,8 +67,9 @@ img {
   transition: all 0.2s ease-in-out;
 }
 
-img:hover {
+.image-container:hover {
   transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -76,6 +78,7 @@ img:hover {
   transition: all 0.2s ease-in-out;
 }
 
-img:hover ~ .image-name {
+.image-container:hover ~ .image-name {
   transform: translateY(24px);
 }
+
